@@ -15,7 +15,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "= 3.7.0"
+      version = "= 4.57.1"
     }
   }
 }
@@ -26,7 +26,7 @@ terraform {
 
 resource "aws_db_instance" "mysql" {
   engine         = "mysql"
-  engine_version = "5.6.41"
+  engine_version = "8.0"
 
   name     = var.name
   username = var.master_username
